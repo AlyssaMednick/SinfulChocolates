@@ -1,0 +1,54 @@
+/* Default CSS */
+
+
+         /*
+         Author: Alyssa Mednick
+	     Date: 06/10/2024
+         */
+         
+         
+         
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a:link, a:hover, a:visited, a:focus {
+        text-decoration:none;
+ }
+ 
+ nav ul {
+     list-style: none;
+     list-style-image: none;
+  }
+  
+address, aside, article, blockquote, div, dl, dt, dd, em, figcaption, figure, h1, h2, h3, h4, h5, h5, h6, header, html, 
+li, main, nav, ol, p, section, span {
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+ }

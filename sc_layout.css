@@ -1,0 +1,164 @@
+/* Default CSS */
+@charset "utf-8";
+
+         /*
+         Author: Alyssa Mednick
+	     Date: 06/10/2024
+         */
+
+
+/*  ----Grid Layout---  */         
+         
+         
+body { 
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr auto 2fr auto auto;
+     grid-template-areas: "header header header"
+                          "navi navi navi"
+                          "login centerp centerp"
+                          "candies fondu truffles"
+                          "footer footer footer";
+     grid-gap: 15px;
+     box-shadow: 20px 20px 30px #2d1a11, -20px -20px 30px #2d1a11;
+     margin: 10px;
+     
+ }
+ 
+ header {
+    grid-area: header;
+    background-color: #2d1a11;
+    text-align: center;
+  }
+ 
+ 
+ div.navi {
+    grid-area: navi;
+    display: block;
+  }
+  
+ div.centerpeice {
+    grid-area: centerp;
+  }
+ 
+ 
+ div.candies {
+    grid-area: candies;
+    margin-left: 10px;
+  }
+  
+ div.candies img {
+   width:250px; 
+   height:200px;       
+  }
+  
+ div.truffles {
+   grid-area: truffles;
+   margin-right: 10px;
+  }
+  
+ div.truffles img {
+   width:250px; 
+   height:200px;       
+  }
+  
+ div.fondu {
+  grid-area: fondu;
+ }
+ 
+ div.fondu img {
+   width:250px; 
+   height:200px;       
+  }
+
+ div.login {
+   grid-area: login;
+   padding:20px;
+   
+ }
+ 
+ footer { 
+    grid-area: footer; 
+    display: flex;
+    flex-flow: row wrap;
+    height:200px;
+    width:100%;
+   
+    
+}
+
+ div.copy { 
+    width:40%;
+    padding: 20px;
+    
+    
+}
+
+ div.contact { 
+    width: 40%; 
+    padding: 20px;
+       
+}
+
+
+/*  ------- Mobile Styles  ------- */
+
+
+@media screen and (device-width < 480px) {
+
+  header h1 {
+    font-size: 40pt;
+  }
+  
+  header {
+    height: 100px;
+  }
+  
+  body {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  div.centerpeice { 
+    width: 100%;
+  }
+  
+  div.candies {
+    width: 100%;
+    margin:0;
+    justify-content: center;
+  }
+  
+  div.candies img {
+    width:460px; 
+    height:375px;     
+  }
+  
+  div.truffles {
+    width: 100%;
+    margin:0;
+    justify-content: center;
+  }  
+  
+  div.truffles img {
+    width:460px; 
+    height:375px;          
+  }
+  
+  div.fondu {
+    margin:0;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  div.fondu img {
+    width:460px; 
+    height:375px;          
+  }
+  
+  .login { order: 99; text-align:center;}
+  
+  div.navi { height: 100px; }
+  
+  footer { order: 100; }
+ }

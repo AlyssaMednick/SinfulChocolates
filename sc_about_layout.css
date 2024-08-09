@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+         /*
+         Author: Alyssa Mednick
+	     Date: 06/10/2024
+         */
+
+body {
+     display: flex;
+     flex-flow: row wrap;
+     width: 850px;
+     box-shadow: 20px 20px 30px #2d1a11, -20px -20px 30px #2d1a11;
+ }
+ 
+header { 
+       text-align:center;
+       width: 100%;
+       background-color: #2d1a11;
+       height: 210px;
+}
+      
+
+.navi { 
+      width:100%;
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center; 
+      margin: 20px;
+}
+
+.login {
+       width:35%;
+       padding:40px;
+ }
+
+.about { 
+       width: 65%; 
+       height: 775px; 
+       border-radius: 25px;
+       padding:10px;
+       justify-content: center;
+       align-content: center;
+       text-align:center;
+}
+
+.about img {
+  width:450px;
+  height:300px;
+ }
+
+footer { 
+    grid-area: footer; 
+    display: flex;
+    flex-flow: row wrap;
+    height:200px;
+    width:100%;
+}
+
+div.copy { 
+    width:40%;
+    padding: 20px;
+}
+
+div.contact { 
+    width: 40%; 
+    padding: 20px;       
+}
+
+article {
+        border-radius: 50px;
+        border-left: #3c1406 20px double;
+        padding:15px;
+ }
+ 
+ 
+ /*  ------ Mobile Styles ------ */
+ 
+ 
+ @media screen and (device-width < 480px) {
+ 
+        body {
+             display: flex; 
+             flex-flow: column wrap;
+         }
+         
+        .login {
+               overflow:hidden;
+               text-align:center;
+               order: 99;
+               width: 100%;
+         }
+         
+        .about {
+              width: 100%;  
+          }
+          
+          
+         footer { order: 100; }
+ 
+  }

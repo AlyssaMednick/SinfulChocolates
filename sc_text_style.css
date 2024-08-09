@@ -1,0 +1,85 @@
+/* Default CSS */
+@charset "utf-8";
+@font-face {
+  font-family: Cathalia;
+  src: url(Cathalia.ttf);
+}
+
+
+
+         /*
+         Author: Alyssa Mednick
+	     Date: 06/10/2024
+         */
+
+         
+         
+         
+  /*   Text Styles   */
+  
+           
+           
+
+h1 { 
+   font-family: Cathalia, Gabriola, Century Gothic;
+   font-size: 100px;
+   padding-top: 20px;
+ }
+ 
+h2 {
+   color: #3c1406;
+   font-family: Cathalia, Gabriola, Century Gothic;
+   line-height: 12pt;
+   font-size: 22pt;
+   text-shadow: 3px 3px #a67a69;
+ } 
+ 
+h3 {
+   color: #a67a69;
+   font-size: 18pt;
+ }
+ 
+strong {
+   color: #a67a69;
+   font-weight: bold;
+   font-variant: small-caps;    
+ }
+ 
+a {
+  color: #3c1406;
+  font-weight:bold;
+ }
+
+nav ul a:link {
+   color: #3c1406;
+   font-family: Cathalia, Gabriola, Century Gothic;
+   font-size: 25px;
+   float:left;
+   display: inline;
+   padding-left: 20px;
+   padding-right: 20px;
+   transition: color 1.2s linear;
+   -webkit-transition: color 1.2s linear;
+   -moz-transition: color 1.2s linear;
+  }
+  
+nav ul a:hover {
+    color: #a67a69;
+ }
+ 
+img { border-radius: 25px; }
+
+p {
+  font-size:1.2em;
+ }
+
+ b {
+   color: #2d1a11;
+   font-weight: bold;
+   letter-spacing: .5em;
+  }
+  
+i {
+   color: #2d1a11;
+   font-variant:small-caps;
+ }

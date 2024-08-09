@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+         /*
+         Author: Alyssa Mednick
+	     Date: 06/10/2024
+         */
+
+div > img { 
+    border-radius: 20px;
+}
